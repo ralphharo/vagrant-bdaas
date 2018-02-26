@@ -1,0 +1,19 @@
+BDaaS vagrant ansible test configuration
+Test deployment of 4 node cluster
+1 - management node: ansible, molecule installed
+1 - master node
+2 - worker nodes
+
+VMs are configured with OpenSSL
+
+Update Vagrant file
+1. Change HOST_SYNC_FOLDER variable to valid path.
+2. Create ssh key to be copied to nodes for ssh access
+  * run the following command in HOST_SYNC_FOLDER
+  * ssh-keygen -t rsa -b 4096 -f vkey.pem -N "" < /dev/zero
+3. Run vagrant up
+4. Test ssh access a couple of ways.
+  * 'vagrant ssh master' to ssh into master node, it will prompt for password: 'vagrant'
+  * 'ssh vagrant@10.0.15.11 -i path_to_HOST_SYNC_FOLDER/vkey.pem'
+
+Roles can be tested using mgmt node vm or locally

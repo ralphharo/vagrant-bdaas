@@ -1,0 +1,9 @@
+[spark-ec2]
+  master ansible_ssh_host=10.0.15.11 private_ip=10.0.15.11 provision_inventory_private_ip=10.0.15.11 provision_inventory_public_ip=10.0.15.11 public_ip=10.0.15.11 node_type=master cluster_name=spark-test instance_fqdn=spark-master.dev.bdaas provision_inventory_hostname=master.dev.bdaas
+  worker1 ansible_ssh_host=10.0.15.21 private_ip=10.0.15.21 provision_inventory_private_ip=10.0.15.21 provision_inventory_public_ip=10.0.15.21 public_ip=10.0.15.21 node_type=worker cluster_name=spark-test instance_fqdn=spark-worker1.dev.bdaas provision_inventory_hostname=worker1.dev.bdaas
+#  worker2 ansible_ssh_host=10.0.15.22 private_ip=10.0.15.22 provision_inventory_private_ip=10.0.15.22 provision_inventory_public_ip=10.0.15.22 public_ip=10.0.15.22 node_type=worker cluster_name=spark-test instance_fqdn=spark-worker2.dev.bdaas provision_inventory_hostname=worker2.dev.bdaas
+[spark-ec2-master]
+  master ansible_ssh_host=10.0.15.11 private_ip=10.0.15.11 provision_inventory_private_ip=10.0.15.11 provision_inventory_public_ip=10.0.15.11 public_ip=10.0.15.11 node_type=master cluster_name=spark-test instance_fqdn=spark-master.dev.bdaas provision_inventory_hostname=master.dev.bdaas
+[spark-ec2-worker]
+  worker1 ansible_ssh_host=10.0.15.21 private_ip=10.0.15.21 provision_inventory_private_ip=10.0.15.21 provision_inventory_public_ip=10.0.15.21 public_ip=10.0.15.21 node_type=worker cluster_name=spark-test instance_fqdn=spark-worker1.dev.bdaas provision_inventory_hostname=worker1.dev.bdaas
+#  worker2 ansible_ssh_host=10.0.15.22 private_ip=10.0.15.22 provision_inventory_private_ip=10.0.15.22 provision_inventory_public_ip=10.0.15.22 public_ip=10.0.15.22 node_type=worker cluster_name=spark-test instance_fqdn=spark-worker2.dev.bdaas provision_inventory_hostname=worker2.dev.bdaas
